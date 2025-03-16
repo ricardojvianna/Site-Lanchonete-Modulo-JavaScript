@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./img/bg-site.jpeg);
+    background-size: cover;
+    
+}
+
+.container-buttons {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    min-width: 95%;
+    height: 100px;
+    background-color: rgba(14, 14, 36, 0.7);
+    border-radius: 10px;
+    border: 3px solid rgba(221, 140, 0, 0.5);
+}
+
+button {
+    width: 150px;
+    background-color: #79cb15;
+    border-radius: 5px;
+    border: 2px solid rgba(221, 140, 0, 0.7);
+    color: #000;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.5s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.menu-snacks {
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    min-width: 95%;
+    height: 470px;
+    background-color: rgba(14, 14, 36, 0.7);
+    border-radius: 10px;
+    border: 3px solid rgba(221, 140, 0, 0.5);
+
+}
+
+ul {
+    list-style: none;
+    /*tira a bolinha que aparece da lista */
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+li {
+    background-color: #79cb15;
+    border: 2px solid rgba(221, 140, 0, 0.7);
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+.reduce-total {
+    background-color: #79cb15;
+    border: 2px solid rgba(221, 140, 0, 0.7);
+    border-radius: 5px;
+    padding: 5px;
+    height: 300px;
+    width: 500px;
+    font-size: 28px;
+
+}
+
+.reduce-img {
+    width: 200px;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgb(221, 0, 33);
+}
+
+
+.menu-snacks img {
+    width: 150px;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgb(221, 0, 33);
+}
+
+p {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgb(221, 0, 33);
+    font-weight: 800;
+}
+
+.color-price {
+    color: #000
+}
+
+.man-burger {
+    position: absolute;
+    top: -5px;
+    right: 8px;
+    z-index: 3;
+
+}
+
+.man-burger img {
+    height: 200px;
+}
+
+.loader{
+    width: 150px;
+    height: 160px;
+    border-radius: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+}
+
+.loader-cube--glowing {
+    z-index: 1;
+    background-color: rgba(14, 15, 14, 0.5);
+    border: 2px solid rgba(237, 232, 234, 0.5);
+
+}
+
+.loader-cube--color {
+    z-index: 2;
+    background: linear-gradient(150deg, rgba(23, 223, 5, 0.6) 40%, rgb(221, 0, 33, 0.3) 75%);
+    animation: rodar 2s ease-in-out infinite;
+    
+}
+
+@keyframes rodar {
+    50% {
+        transform: rotate(-80deg);
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .man-burger {
+        top: 550px;
+        right: 140px;
+    }
+
+    .loader {
+        top: 280px;
+        right: 75px;
+    }
+
+    .container-buttons {
+        gap: 15px;    
+    }
+
+    button {
+        width: 70px;
+        height: 50px;
+        padding: 5px;
+        cursor: pointer;
+    
+    }
+
+    .menu-snacks {
+        gap: 10px;
+        min-width: 50%;
+        height: 500px;
+        
+        
+    }
+    
+    ul {
+        grid-template-columns: 100px 100px 100px;
+        gap: 2px;
+    }
+
+    .menu-snacks img {
+        width: 80px;
+        height: 80px;
+        
+    }
+    
+    .reduce-total {
+        width: 150px;
+        height: 150px;
+        
+    }
+
+    .reduce-img {
+        width: 200px;
+        border-radius: 2px;
+        cursor: pointer;
+        box-shadow: 3px 3px 5px rgb(221, 0, 33);
+    }
+
+    p {
+        font-size: 10px;
+    }
+        
+}
