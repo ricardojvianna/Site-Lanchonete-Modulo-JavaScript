@@ -5,7 +5,7 @@ const buttonMapearTudo = document.querySelector(".button-map")
 const buttonSomarTudo = document.querySelector(".button-reduce")
 const buttonFiltrarTudo = document.querySelector(".button-filter")
 
-// FUNÇÃO QUE FORMATa A MOEDA PARA REAL
+// FUNÇÃO QUE FORMATA A MOEDA PARA REAL
 function formatCurrency(value) {
     const newValue = value.toLocaleString('pt-br', {
         style: 'currency',
@@ -14,7 +14,7 @@ function formatCurrency(value) {
     return newValue
 }
 
-
+// FUNÇÃO QUE IMPRIME NA TELA OS ELEMENTOS DO ARRAY
 let myList = ''
 function mostrarTudo(newArray) {
     myList = '' // tem que esvaziar a variável, antes de add os items na tela, para não ter repetição
